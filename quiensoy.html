@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sofia Jimenez</title>
+
+        <!--CSS-->
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            /*Estilo del cuerpo de la pagina */
+            body {
+                font-family: Arial;
+                margin: 0;
+            }
+
+            /*Header/Logo y Titulo */
+            .header {
+                padding: 60px;
+                text-align: center;
+                background: #7031f9;
+                color: rgb(255, 255, 255);
+            }
+
+            /Estilo de la barra de navegacion/
+            .navbar {
+                display: flex;
+                background-color: #8e6cf6;
+            }
+
+            /* Estilo de los enlaces de la barra de navegacion*/
+            .navbar a{
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            /* Cambiar el color cuando paso el mouse */
+            .navbar a:hover {
+                background-color: #c6b2ec;
+                color: black;
+
+            }
+
+            /*Contenedor de columnas */
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* Barra lateral */
+            .side {
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+
+            }
+
+            /* Columna principal*/
+            .main {
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+
+            }
+
+            /* Imagenes Falsas, solo de ejemplo */
+            .imagenfalsa {
+                background-color: white;
+                width: 100px;
+                padding: 20px;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #dfbffa;
+
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two column stack on top of each other instead of next to each */
+            @media and (max-width: 700px) {
+                .row,
+                .navbar {
+                    flex-direction: column;
+
+                }
+            
+            }
+
+        </style>    
+    <head>
+<body> 
+    <div style="background: rgb(143, 63, 235);padding: 5px;">
+        <h4 style="text-align: center;">Bienvenidos a mi pagina web.</h4>
+    </div>
+
+    <!--Header-->
+    <div class="header">
+        <h1>Sofia Jimenez</h1>
+        <p>Colegio Serafin de Asis, Sexto A de Ciencias</p>
+        <p>Soy una estudiante muy <b>aplicada, responsable</b></p>
+    </div>
+
+    <!--Barra de navegacion-->
+    <div style="background: #d1b2ec; padding: 5px;">
+
+        <nav>
+            <a href="index.html" onclick="mostrarSeccion('Inicio')">Inicio</a>
+            <a href="quiensoy.html" onclick="mostrarSeccion('Quién-soy')">Quién Soy</a>
+            <a href="contacto.html" onclick="mostrarSeccion('Contacto')">Contacto</a>
+        </nav>
+    </div>
+
+
+<!--Contenido-->
+<div class="row">
+    <div class="side">
+        <h2>Acerca de mi</h2>
+        <h5>Mi foto</h5>
+        <div class="imagenfalsa" style="height: 200px;"><img src="https://raw.githubusercontent.com/sofiajimenezr/sofiamaria/refs/heads/main/imagenes/baton%20ballet.jpg" alt="yo pequeña" width="250" height="200"></div>
+        <p>  </p>
+        <p>Mi nombre es Sofia Maria Jimenez Rosa, tengo 18 años de edad. Actualmente estudio en el Colegio Serafin de Asis, tomando el ultimo año de bachiller. El mes pasado me aceptaron en la Universidad Iberoamericana de Santo Domingo.</p>
+        <p>En mi tiempo libre me gusta bailar, ver peliculas y series, pasar tiempo con amigos y familia, y escuchar musica. Mis gustos musicales se basan en el pop. Los cantantes que mas me gustan son The Weeknd, Sabrina Carpenter, Gracie Abrams, SZA, etc...   </p>
+        <p>He participado en varias competencias de gimnasia, presentaciones de baton ballet, competencias de natacion, etc...</p>

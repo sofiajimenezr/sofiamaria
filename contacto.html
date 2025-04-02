@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sofia Jimenez</title>
+
+        <!--CSS-->
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            /*Estilo del cuerpo de la pagina */
+            body {
+                font-family: Arial;
+                margin: 0;
+            }
+
+            /*Header/Logo y Titulo */
+            .header {
+                padding: 60px;
+                text-align: center;
+                background: #fbaffa;
+                color: rgb(255, 255, 255);
+            }
+
+            /Estilo de la barra de navegacion/
+            .navbar {
+                display: flex;
+                background-color: #fa7ad8;
+            }
+
+            /* Estilo de los enlaces de la barra de navegacion*/
+            .navbar a{
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+
+            /* Cambiar el color cuando paso el mouse */
+            .navbar a:hover {
+                background-color: #e651fd;
+                color: black;
+
+            }
+
+            /*Contenedor de columnas */
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            /* Barra lateral */
+            .side {
+                flex: 30%;
+                background-color: #f1f1f1;
+                padding: 20px;
+
+            }
+
+            /* Columna principal*/
+            .main {
+                flex: 70%;
+                background-color: white;
+                padding: 20px;
+
+            }
+
+            /* Imagenes Falsas, solo de ejemplo */
+            .imagenfalsa {
+                background-color: white;
+                width: 100px;
+                padding: 20px;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: #e5bffa;
+
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two column stack on top of each other instead of next to each */
+            @media and (max-width: 700px) {
+                .row,
+                .navbar {
+                    flex-direction: column;
+
+                }
+            
+            }
+
+        </style>    
+    <head>
+<body> 
+    <div style="background: rgb(250, 37, 218);padding: 5px;">
+        <h4 style="text-align: center;">Bienvenidos a mi pagina web.</h4>
+    </div>
+
+    <!--Header-->
+    <div class="header">
+        <h1>Sofia Jimenez</h1>
+        <p>Colegio Serafin de Asis, Sexto A de Ciencias</p>
+        <p>Soy una estudiante muy <b>responsable, aplicada</b></p>
+    </div>
+
+    <!--Barra de navegacion-->
+    <div style="background: #ecb2e9; padding: 5px;">
+        <nav>
+            <a href="index.html" onclick="mostrarSeccion('Inicio')">Inicio</a>
+            <a href="quiensoy.html" onclick="mostrarSeccion('Quién-soy')">Quién Soy</a>
+            <a href="contacto.html" onclick="mostrarSeccion('Contacto')">Contacto</a>
+        </nav>
+    </div>
+
+    <!--Contenido-->
+<div class="row">
+    <div class="side">
+        <h2>Me pueden contactar en:</h2>
+        <p>Instagram: sofiajimenez07 </p>
+        <p>Facebook: sofiajimenez07</p>
+        <p>Numero: 809-543-9872</p>
+        <p>sofiajimenezr635@gmail.com</p>
+        
+        <div class="imagenfalsa" style="height: 200px;"><img src="https://raw.githubusercontent.com/sofiajimenezr/sofiamaria/refs/heads/main/imagenes/ultimafr.jpg" alt="yo pequeña" width="250" height="200"></div>
